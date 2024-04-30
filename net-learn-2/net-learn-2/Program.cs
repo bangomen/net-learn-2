@@ -10,7 +10,16 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hallo, ini code C#.Net Pertamaku...");
+            int x = 42; //bilangan bulat
+            double pi = 3.14; //bilangan desimal
+            char y = 'Z'; //string dengan  value 1
+            string hai = "World"; //string with many values
+            bool kondisi = true;//true or false
+
+            x = 5-1;
+
+            Console.WriteLine(x);
+
             Console.ReadLine();
         }
     }
