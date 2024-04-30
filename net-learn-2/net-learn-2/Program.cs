@@ -10,28 +10,31 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Masukan angka x :");
-            string x = Console.ReadLine();
-            //int x = 18;
-            switch(Convert.ToInt32(x))
+            int x = 1;
+          
+            /*while (x < 60)
             {
-                case 8:
-                    Console.WriteLine("nilai x adalah 8");
-                    break;
-                case 18:
-                    Console.WriteLine("Nilai x adalah 18");
-                    break;
-                case 28:
-                    Console.WriteLine("Nilai x adalah 28");
-                    break;
-                default:
-                    Console.WriteLine("Nilai x tidak dikenali");
-                    break;
+                if(x < 10) {
+                    Console.WriteLine("Nilai x = 0" + x);
+                }
+                else
+                {
+                    Console.WriteLine("Nilai x = " + x);
+                }
+                x++;
+            }*/
 
+           /* while (x < 50) { 
+            Console.WriteLine("Nilai x = " + x);
+                x += 2; //x=x+2
+            }*/
+
+            while (++x < 6)
+            {
+                Console.WriteLine(x);
             }
 
             Console.ReadLine();
-
         }
     }
 }
