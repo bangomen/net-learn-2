@@ -11,35 +11,39 @@ namespace net_learn_2
         static void Main(string[] args)
         {
 
-            /*rumus for loop
-              for (inisiasi,kondisi,Increment) {
-              statement
-              }
-            */
+            Console.Write("Inputkan umur anda :");
+            string umur = Console.ReadLine();
 
-            Console.Write("Masukan Nilai Total : ");
-            string total = Console.ReadLine();
+            Console.Write("is Married ? :");
+            string is_married = Console.ReadLine();
+            
+            Console.Write("Masukan Nilai Uang :");
+            string uang = Console.ReadLine();
 
-            if (Convert.ToInt32(total) > 1000)
+            /*
+            //Operatore AND (&&)
+            if (Convert.ToInt32(umur) > 25 && Convert.ToDouble(uang) > 1000 && Convert.ToBoolean(is_married))
             {
-                Console.WriteLine("Tidak dapat melakukan loop dengan angka : {0}", total);
+                Console.WriteLine("Success");
             }
             else
             {
-                int jumlah = 1;
-                for (int x = 1; x < Convert.ToInt32(total); x++)
-                {
-                    Console.WriteLine("Nilai x = " + x);
-                    jumlah *= x;
-                }
-                Console.WriteLine("Total Penjumlahan angka x = ", + jumlah);
+               Console.WriteLine("Gagal");
+            }
+            */
+
+            //Operator OR (||)+ Combination
+
+            if( (Convert.ToInt32(umur) > 25 || Convert.ToInt32(uang) > 1000) && !Convert.ToBoolean(is_married))
+            {
+                Console.WriteLine("Benar");
+            }
+            else
+            {
+                Console.WriteLine("Salah"); 
             }
 
             Console.ReadLine();
-
-
-
-
 
 
         }
