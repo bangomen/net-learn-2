@@ -10,16 +10,39 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            do
+
+            /*rumus for loop
+              for (inisiasi,kondisi,Increment) {
+              statement
+              }
+            */
+
+            Console.Write("Masukan Nilai Total : ");
+            string total = Console.ReadLine();
+
+            if (Convert.ToInt32(total) > 1000)
             {
-                Console.WriteLine(x);
-                x++;
-            }while (x < 0);
-            //perbedaan dengan while loop adalah, do while akan tetap menampilkan result walaupun cuma 1 kali lopp walupun ketentuannya salah.
+                Console.WriteLine("Tidak dapat melakukan loop dengan angka : {0}", total);
+            }
+            else
+            {
+                int jumlah = 1;
+                for (int x = 1; x < Convert.ToInt32(total); x++)
+                {
+                    Console.WriteLine("Nilai x = " + x);
+                    jumlah *= x;
+                }
+                Console.WriteLine("Total Penjumlahan angka x = ", + jumlah);
+            }
 
             Console.ReadLine();
+
+
+
+
+
+
         }
-        
+
     }
 }
