@@ -10,28 +10,16 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Masukan angka x :");
-            string x = Console.ReadLine();
-            //int x = 18;
-            switch(Convert.ToInt32(x))
+            int x = 10;
+            do
             {
-                case 8:
-                    Console.WriteLine("nilai x adalah 8");
-                    break;
-                case 18:
-                    Console.WriteLine("Nilai x adalah 18");
-                    break;
-                case 28:
-                    Console.WriteLine("Nilai x adalah 28");
-                    break;
-                default:
-                    Console.WriteLine("Nilai x tidak dikenali");
-                    break;
-
-            }
+                Console.WriteLine(x);
+                x++;
+            }while (x < 0);
+            //perbedaan dengan while loop adalah, do while akan tetap menampilkan result walaupun cuma 1 kali lopp walupun ketentuannya salah.
 
             Console.ReadLine();
-
         }
+        
     }
 }
