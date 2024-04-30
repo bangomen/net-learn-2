@@ -10,33 +10,20 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Console.Write("Masukan Angka 1:");
+           
+            Console.WriteLine("Input data x :");
             string x = Console.ReadLine();
-
-            Console.Write("Masukan Angka 2:");
+            Console.WriteLine("Input data y :");
             string y = Console.ReadLine();
 
-            Console.Write("Hasil Penjumlahan adalah = {0}", x + y);
-            Console.WriteLine("");
-
-            Console.Write("Masukan Angka 1 lagi :");
-            int a = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Masukan Angka 2 lagi :");
-            int b = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Hasil Penjumlahan dengan Converter Int = {0}",a+b);
-            Console.WriteLine("");
-            Console.Write("Hasil Pengurangan dengan Converter Int = {0}", a - b);
-            Console.WriteLine("");
-            Console.Write("Hasil Perkalian dengan Converter Int = {0}",Convert.ToDouble(a) * Convert.ToDouble(b));
-            Console.WriteLine("");
-            Console.Write("Hasil Pembagian dengan Converter Int = {0}", Convert.ToDouble(a) / Convert.ToDouble(b));
-            Console.WriteLine("");
-            Console.Write("Hasil Modulus(Sisa Pembagian) dengan Converter Int = {0}", a % b);
-
-
-
+            if (Convert.ToInt32(x) > Convert.ToInt32(y))
+            {
+                Console.WriteLine("x :{0} Lebih besar dari y : {1}", x,y);
+            }
+            else
+            {
+                Console.WriteLine("Y :{1} Lebih besar dari x :{0}",x,y);
+            }
 
             Console.ReadLine();
         }
