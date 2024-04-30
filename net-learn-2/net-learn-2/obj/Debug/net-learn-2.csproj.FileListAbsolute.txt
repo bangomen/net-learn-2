@@ -1,0 +1,7 @@
+D:\net\net-learn-2\net-learn-2\net-learn-2\bin\Debug\net-learn-2.exe.config
+D:\net\net-learn-2\net-learn-2\net-learn-2\bin\Debug\net-learn-2.exe
+D:\net\net-learn-2\net-learn-2\net-learn-2\bin\Debug\net-learn-2.pdb
+D:\net\net-learn-2\net-learn-2\net-learn-2\obj\Debug\net-learn-2.csproj.AssemblyReference.cache
+D:\net\net-learn-2\net-learn-2\net-learn-2\obj\Debug\net-learn-2.csproj.CoreCompileInputs.cache
+D:\net\net-learn-2\net-learn-2\net-learn-2\obj\Debug\net-learn-2.exe
+D:\net\net-learn-2\net-learn-2\net-learn-2\obj\Debug\net-learn-2.pdb
