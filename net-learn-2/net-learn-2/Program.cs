@@ -10,6 +10,8 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hallo, ini code C#.Net Pertamaku...");
+            Console.ReadLine();
         }
     }
 }
