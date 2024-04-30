@@ -10,32 +10,35 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            int x = 1;
-          
-            /*while (x < 60)
-            {
-                if(x < 10) {
-                    Console.WriteLine("Nilai x = 0" + x);
-                }
-                else
-                {
-                    Console.WriteLine("Nilai x = " + x);
-                }
-                x++;
-            }*/
+            // int persegipanjang = luas(10, 5); //dengan kondisi ada value;
+            // int persegipanjang = luas(); //dengan kondisi tidak ada value maka akan menggunakan value default;
+            // int persegipanjang = luas(l:16,p:29);// dengan mengisi nilai pada parameter, maka inputan datanya tidak perlu di urutkan.
+           /* Console.Write("Masukan Nilai Panjang(p) :");
+            string p=Console.ReadLine();
 
-           /* while (x < 50) { 
-            Console.WriteLine("Nilai x = " + x);
-                x += 2; //x=x+2
-            }*/
+            Console.Write("Masukan Nilai Lebar(l) :");
+            string l=Console.ReadLine();
+            int persegipanjang = luas(Convert.ToInt32(p), Convert.ToInt32(l));
 
-            while (++x < 6)
-            {
-                Console.WriteLine(x);
-            }
+            Console.WriteLine("Luas Persegi Panjang adalah :"+ persegipanjang);
+           */
 
-            Console.ReadLine();
+            int hitung = Pengurangan(y:5, x:10);
+            Console.WriteLine(hitung);
 
+
+            Console.ReadLine(); 
         }
+
+        static int luas(int p=0, int l = 0)
+        {
+            return p * l;
+        }
+
+        static int Pengurangan(int x, int y)
+        {
+            return x - y;
+        }
+
     }
 }
