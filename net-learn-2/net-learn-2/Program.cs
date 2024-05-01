@@ -11,6 +11,7 @@ namespace net_learn_2
 
             Console.WriteLine(a.Length);
             Console.WriteLine(a.IndexOf('i'));
+            Console.WriteLine(a[3]);
 
             a = a.Insert(0, "ini adalah ");
             Console.WriteLine(a);
@@ -32,6 +33,7 @@ namespace net_learn_2
             a=a.Remove(2);
 
             Console.WriteLine(a);
+            
 
             Console.ReadLine();
         }
