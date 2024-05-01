@@ -11,59 +11,52 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            int[] a = { 1, 2, 3, 4, 5, 6, 7, 8 };
-            double[] b = { 1.5, 2.4, 3.2, };
-            string[] c = {"dono","Kasino","Indro" };
+            int[] a= {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int[,] b = { 
+                { 1,3,5,7,9,11},
+                { 2,4,6,8,10,12} 
+            };
+            /*  for(int x = 0; x < a.Length; x++)//Show data with for loop in array one dimension
+              {
+                  Console.WriteLine(a[x]);    
+              }*/
 
-            // c[1] = "Daniel";//Mengganti nilai pada array string
-
-            //a[1] = a[1] + 1;//melakukan kalkulasi pada nilai int
-
-            /* for (int i = 0; i < 7; i++) //menampilkan data array menggunakan FOR
+            /* for (int i =0; i<b.GetLength(0); i++)//Show data with For loop in Array two dimension
              {
-                 Console.WriteLine(a[i]);
+                 for(int i_arr = 0; i_arr < b.GetLength(1); i_arr++)
+                 {
+                     Console.Write(b[i,i_arr]);
+                 }
+                 Console.WriteLine();
              }*/
 
-
-            /* for (int i = 0; i <= a.Length; i++) //menampilkan data array menggunakan FOR + Lenght Array sebagai loop
-             {
-                 Console.WriteLine("Nilai Dari array a adalah :" + a[i]);
-             }*/
-            int total_a = 0;
-            foreach (int item in a)
-            {
-                Console.WriteLine(item);
-                total_a += item;
-            }
-            Console.WriteLine("==");
-            Console.WriteLine(total_a);
-            Console.WriteLine();
-
-
-
-            double total_b = 0;
-            foreach (double item in b)
-            {
-                Console.WriteLine(item);
-                total_b += item;    
-            }
-            Console.WriteLine("==");
-            Console.WriteLine(total_b);
-     
-
-            Console.WriteLine();
-
-            foreach (string item in c)
-            {
-                Console.WriteLine(item);
-            }
+            int[,,] c = { { { 1, 3 }, { 5, 7 } },{{ 2,4},{ 6,8} } };
+            // Console.WriteLine(c[1,0,1]);
+            Console.WriteLine("=Rank=");
+            Console.WriteLine(a.Rank);
+            Console.WriteLine(b.Rank);
+            Console.WriteLine(c.Rank);
+            Console.WriteLine("=Lenght=");
+            Console.WriteLine(a.Length);
+            Console.WriteLine(b.Length);
+            Console.WriteLine(b.GetLength(0));
+            Console.WriteLine(c.Length);
+            Console.WriteLine("=array a: Max/min/sum Value=");
+            Console.WriteLine(a.Max());
+            Console.WriteLine(a.Min());
+            Console.WriteLine(a.Sum());
 
 
 
 
 
-            // Console.WriteLine(a[1]);
-            Console.ReadLine(); ;
+
+
+
+
+            //  Console.WriteLine(a[1]);//call value from array one dimension
+            //  Console.WriteLine(b[1,5]);//call value from array two dimension
+            Console.ReadLine();
 
         }
 
