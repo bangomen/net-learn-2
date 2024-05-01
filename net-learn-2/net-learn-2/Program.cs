@@ -6,22 +6,23 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Mobil toyota= new Mobil();
-            Mobil Dayhatsu = new Mobil();
+          Anggota club1 = new Anggota();
+            club1.nama = "Omen";
+            club1.umur = 25;
+            club1.setSaldo(1000);
 
-            toyota.Klakson();
-            toyota.warna = "Hijau";
-            toyota.kecepatan = 200;
 
-            Dayhatsu.warna = "Putih";
-            Dayhatsu.kecepatan = 180;
+            string nama = club1.nama;
+            int umur=club1.umur;
+            int saldo=club1.getSaldo();
 
-            //Dayhatsu.Klakson();
 
-            Console.WriteLine("Warna Mobil Toyota adalah: "+ toyota.warna);
-            Console.WriteLine("Warna Mobil Dayhatsu adalah: "+ Dayhatsu.warna);
-            Console.WriteLine("Kecepatan Toyota adalah: " + toyota.kecepatan);
-            Console.WriteLine("Kecepatan Dayhatsu adalah: " + Dayhatsu.kecepatan);
+            Console.WriteLine("nama : {0}, Umur : {1}, Saldo : {2}",nama, umur, saldo);
+            Console.WriteLine("Atau bisa juga di tambilkan seperti dibawah ini");
+            Console.WriteLine("nama :" + nama);
+            Console.WriteLine("Umur :" + umur);
+            Console.WriteLine("Saldo :" + saldo);
+
 
 
             Console.ReadLine();
