@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,57 +11,61 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            // int persegipanjang = luas(10, 5); //dengan kondisi ada value;
-            // int persegipanjang = luas(); //dengan kondisi tidak ada value maka akan menggunakan value default;
-            // int persegipanjang = luas(l:16,p:29);// dengan mengisi nilai pada parameter, maka inputan datanya tidak perlu di urutkan.
-            /* Console.Write("Masukan Nilai Panjang(p) :");
-             string p=Console.ReadLine();
+            /* Print("omen juara");
+             Console.ReadLine();*/
 
-             Console.Write("Masukan Nilai Lebar(l) :");
-             string l=Console.ReadLine();
-             int persegipanjang = luas(Convert.ToInt32(p), Convert.ToInt32(l));
-
-             Console.WriteLine("Luas Persegi Panjang adalah :"+ persegipanjang);
+            /*Call Function untuk perhitungan factorial
+            int n = 15;
+             Console.WriteLine("Nilai Factorial dari {0}! adalah {1}", n, Factorial(n));
             */
-            /*
-             int hitung = Pengurangan(y:5, x:10);
-             Console.WriteLine(hitung);*/
+            int n = 50;
+            Piramida(5);
+            Piramida(30);
+            Piramida(50);
 
-            /*Passing by value : hitung(ref a); jika idak menggunakan ref maka nilai tidak dilakukan hitung, karena menggunakan void, jika ingin di 
-            prosesuntuk perhitungan maka harus di tambahkan ref*/
-
-            int a = 5;
-            hitung(ref a);
-            Console.WriteLine(a);
-
-            int b = 7;
-            getNilai(out a, out b);
-            Console.WriteLine(a +" "+b);
-
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
 
-        static int luas(int p=0, int l = 0)
+        static void Print(int a) {//method yang digunakan untuk menghitung bilangan bulat
+            Console.WriteLine("biliangan bulat : {0}", a);
+        }
+
+        static void Print(double a)//method yang digunakan untuk menghitung bilangan pecahan
         {
-            return p * l;
+            Console.WriteLine("Bilangan Pecahan : {0}", a);
+
         }
 
-        static int Pengurangan(int x, int y)
+        static void Print(string a)//method yang digunakan untuk mengelola data string
         {
-            return x - y;
+            Console.WriteLine("Nilai adalah string :{0}",a);
         }
 
-        static void hitung(ref int x)
+        static int Factorial(int n)
         {
-            x = x * x;
-            
+            if (n == 1)
+            {
+                return 1;
+            }
+            return n * Factorial(n - 1);
         }
 
-        static void getNilai(out int x,out int y)
+        static void Piramida(int n)
         {
-            x = 15;
-            y = 12;
+            for(int i=1; i <= n; i++)
+            {
+                for(int j=i; j<n; j++)
+                {
+                    Console.Write(" ");
+                }
+                for(int k = 1; k <=2*i-1 ; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
         }
+
 
     }
 }
