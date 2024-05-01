@@ -6,25 +6,15 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            Mobil toyota= new Mobil();
-            Mobil Dayhatsu = new Mobil();
-
-            toyota.Klakson();
-            toyota.warna = "Hijau";
-            toyota.kecepatan = 200;
-
-            Dayhatsu.warna = "Putih";
-            Dayhatsu.kecepatan = 180;
-
-            //Dayhatsu.Klakson();
-
-            Console.WriteLine("Warna Mobil Toyota adalah: "+ toyota.warna);
-            Console.WriteLine("Warna Mobil Dayhatsu adalah: "+ Dayhatsu.warna);
-            Console.WriteLine("Kecepatan Toyota adalah: " + toyota.kecepatan);
-            Console.WriteLine("Kecepatan Dayhatsu adalah: " + Dayhatsu.kecepatan);
-
-
+          Anggot A1 = new Anggot();
+            A1.Saldo = 30000;
+            A1.Nama = "Omen";
+            A1.Umur = 35;
+            Console.WriteLine(A1.Saldo);
+            Console.WriteLine(A1.Nama);
+            Console.WriteLine(A1.Umur);
             Console.ReadLine();
+           
         }
 
 
