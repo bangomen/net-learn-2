@@ -11,59 +11,60 @@ namespace net_learn_2
     {
         static void Main(string[] args)
         {
-            /* Print("omen juara");
-             Console.ReadLine();*/
+            int[] a = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            double[] b = { 1.5, 2.4, 3.2, };
+            string[] c = {"dono","Kasino","Indro" };
 
-            /*Call Function untuk perhitungan factorial
-            int n = 15;
-             Console.WriteLine("Nilai Factorial dari {0}! adalah {1}", n, Factorial(n));
-            */
-            int n = 50;
-            Piramida(5);
-            Piramida(30);
-            Piramida(50);
+            // c[1] = "Daniel";//Mengganti nilai pada array string
 
-            Console.ReadLine();
-        }
+            //a[1] = a[1] + 1;//melakukan kalkulasi pada nilai int
 
-        static void Print(int a) {//method yang digunakan untuk menghitung bilangan bulat
-            Console.WriteLine("biliangan bulat : {0}", a);
-        }
+            /* for (int i = 0; i < 7; i++) //menampilkan data array menggunakan FOR
+             {
+                 Console.WriteLine(a[i]);
+             }*/
 
-        static void Print(double a)//method yang digunakan untuk menghitung bilangan pecahan
-        {
-            Console.WriteLine("Bilangan Pecahan : {0}", a);
 
-        }
-
-        static void Print(string a)//method yang digunakan untuk mengelola data string
-        {
-            Console.WriteLine("Nilai adalah string :{0}",a);
-        }
-
-        static int Factorial(int n)
-        {
-            if (n == 1)
+            /* for (int i = 0; i <= a.Length; i++) //menampilkan data array menggunakan FOR + Lenght Array sebagai loop
+             {
+                 Console.WriteLine("Nilai Dari array a adalah :" + a[i]);
+             }*/
+            int total_a = 0;
+            foreach (int item in a)
             {
-                return 1;
+                Console.WriteLine(item);
+                total_a += item;
             }
-            return n * Factorial(n - 1);
-        }
+            Console.WriteLine("==");
+            Console.WriteLine(total_a);
+            Console.WriteLine();
 
-        static void Piramida(int n)
-        {
-            for(int i=1; i <= n; i++)
+
+
+            double total_b = 0;
+            foreach (double item in b)
             {
-                for(int j=i; j<n; j++)
-                {
-                    Console.Write(" ");
-                }
-                for(int k = 1; k <=2*i-1 ; k++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
+                Console.WriteLine(item);
+                total_b += item;    
             }
+            Console.WriteLine("==");
+            Console.WriteLine(total_b);
+     
+
+            Console.WriteLine();
+
+            foreach (string item in c)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
+
+
+            // Console.WriteLine(a[1]);
+            Console.ReadLine(); ;
+
         }
 
 
